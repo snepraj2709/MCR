@@ -12,6 +12,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Question({ question }) {
 	let {
+		postId,
 		username,
 		name,
 		picUrl,
@@ -123,7 +124,7 @@ export default function Question({ question }) {
 							<FontAwesomeIcon
 								icon={faComment}
 								className="icon"
-								// onClick={() => navigate('/question')}
+								 onClick={() => navigate(`/question/${postId}`)}
 							/>
 							<>{comments.length}</>
 						</div>

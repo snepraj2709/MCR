@@ -9,7 +9,7 @@ export default function App() {
       <h2>My forum</h2>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/question" element={<QuestionDetail />} />
+        <Route path="/question/:questionId" element={<QuestionDetail />} />
       </Routes>
     </div>
   );
